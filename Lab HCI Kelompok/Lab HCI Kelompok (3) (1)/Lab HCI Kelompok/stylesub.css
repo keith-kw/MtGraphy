@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    transition: 1s ease;
+}
+.nav{
+    position: relative;
+}
+.nav-items a{
+    position: relative;
+    background-color: #AA7070;
+    color:#EDCDBB;
+    font-size: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 3.5em;
+    transition: 0.5s ease;
+    border: 0.5em solid #AA7070;
+    border-radius: 0.5em;
+}
+.nav-items a:before{
+    content: '';
+    position: absolute;
+    background:  #EDCDBB;
+    width: 0;
+    height: 0.1em;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.nav-items a:hover:before{
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9ADAD;
+}
+.container{
+    margin: 15% 5% 10%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.overlay{
+    background: #F2E8E2;
+    width: 20em;
+    height: 20em;
+    margin: 3em;
+    border-radius: 10%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.6s easy;
+}
+.overlay:hover{
+    transform: translateY(-10%);
+}
+.overlay .content{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #4A241A;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.overlay .content h2{
+    text-align: center;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 35%;
+}
+.overlay .content p{
+    font-size: 130%;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin: 15% 0 15%;
+}
+.footer{
+    background-color: #BA8484;
+    position: relative;
+    height: 20em;
+}
+.logo{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 55%;
+}
+.ig{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.yt{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.fb{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.google{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.contactText{
+    margin-top: 1%;
+    font-size: 250%;
+    color: #E9D3CE;
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+.emailContact{
+    position: absolute;
+    left: 52%;
+    top: 30%;
+}
+.emailContact img{
+    height: 2.3em;
+}
+.mtEmail{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.telpContact{
+    position: absolute;
+    left: 51.7%;
+    top: 49%;
+}
+.telpContact img{
+    height: 3.3em;
+}
+.mtTelp{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 52%;
+}
+.locationContact{
+    position: absolute;
+    left: 52.2%;
+    top: 70%; 
+}
+.locationContact img{
+    height: 3em;
+}
+.mtLocation{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 72%;
+}
+@media screen and (max-width: 800px){
+    header{
+        padding: 5% 10%;
+    }
+    .nav-items a{
+        font-size: 120%;
+        font-weight: 700;
+        margin-left: 1em;
+    }
+    .container{
+        margin: 45% 5% 30%;
+    }
+    .row{
+        width: 180%;
+    }
+    .footer{
+        margin-top: 31%;
+        background-color: #BA8484;
+        position: relative;
+        height: 20em;
+        width: 85em;
+    }
+    .logo{
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 50%;
+    }
+    .contactText{
+        left: 55%;
+    }
+    .emailContact{
+        left: 50%;
+        top : 27%
+    }
+    .mtEmail{
+        font-size: 190%;
+        left: 55%;
+        top: 27%;
+    }
+    .telpContact{
+        left: 49.7%;
+        top : 45%;
+    }
+    .telpContact img{
+        height: 3.5em;
+    }
+    .mtTelp{
+        font-size: 190%;
+        left: 55%;
+        top: 48%;
+    }
+    .locationContact{
+        position: absolute;
+        left: 50%;
+        top: 50; 
+    }
+    .locationContact img{
+        height: 3.3em;
+    }
+    .mtLocation{
+        font-size: 190%;
+        left: 55%;
+        top: 72%;
+    }
+}

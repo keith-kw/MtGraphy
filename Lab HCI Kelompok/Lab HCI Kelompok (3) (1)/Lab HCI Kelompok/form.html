@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Payment</title>
+        <link rel="stylesheet" href="styleform.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+               <div class="nav-items">
+                    <a href="index.html">HOME</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="contactUs.html">CONTACT US</a>
+                    <a href="subs.html">SUBSCRIBE</a>
+               </div>
+            </div>
+            <a href="index.html"><img src="Assets/images/logo.png"></a>
+        </header>
+        <div class="subs-form">
+            <form action="#" method="POST">
+                <h3 class="title">Payment</h3>
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                    <label id="errName"></label>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <label id="errPassword"></label>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label id="errEmail"></label>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                    <label id="errPhone"></label>
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="country">Select Country</option>
+                        <option value="indo">Indonesia</option>
+                        <option value="sg">Singapore</option>
+                        <option value="malay">Malaysia</option>
+                    </select>
+                </div>
+                <div class="check">
+                    <input type="checkbox">
+                    <p>Yes, i have agree on terms and condition</p>
+                </div>
+                <div>
+                    <input type="submit" value="Subscribe" id="btn">
+                </div>
+            </form>
+        </div>
+        <script src="form.js"></script>
+ 
+        <footer class="footer">
+            <img class="logo" src="Assets/images/logoMT2.png" alt="Assets/images/logoMT2.png">
+            <br>
+            <div class="sosmed">
+                <a href="https://instagram.com/"><img class="ig" src="Assets/images/logoIG.png" alt="./image/logoIG.png"></a>
+                <a href="https://youtube.com/"><img class="yt" src="Assets/images/logoYT.png" alt="Assets/images/logoYT.png"></a>
+                <a href="https://facebook.com/"><img class="fb" src="Assets/images/logoFB.png" alt="Assets/images/logoFB.png"></a>
+                <a href="https://google.com/"><img class="google" src="Assets/images/logoG+.png" alt="Assets/images/logoG+.png"></a>
+            </div>
+
+            <div>
+                <p class="contactText">CONTACT US</p>
+            </div>
+
+            <div class="emailContact">
+                <img src="Assets/images/logoEmail.png" alt="Assets/images/logoEmail.png" height="35px">
+            </div>
+
+            <div>
+                <p class="mtEmail">mtgraphy@gmail.com</p>
+            </div>
+
+            <div class="telpContact">
+                <img src="Assets/images/logoTelp.png" alt="Assets/images/logoTelp.png" height="50px">
+            </div>
+
+            <div>
+                <p class="mtTelp">0812-6537-7878</p>
+            </div>
+
+            <div class="locationContact">
+                <img src="Assets/images/logoLocation.png" alt="Assets/images/logoLocation.png" height="50px">
+            </div>
+
+            <div>
+                <p class="mtLocation">MT Street No. 128</p>
+            </div>
+        </footer>
+    </body>
+</html>

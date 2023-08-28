@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    transition: 1s ease;
+}
+.nav{
+    position: relative;
+}
+.nav-items a{
+    position: relative;
+    background-color: #AA7070;
+    color:#EDCDBB;
+    font-size: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 3.5em;
+    transition: 0.5s ease;
+    border: 0.5em solid #AA7070;
+    border-radius: 0.5em;
+}
+.nav-items a:before{
+    content: '';
+    position: absolute;
+    background:  #EDCDBB;
+    width: 0;
+    height: 0.1em;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.nav-items a:hover:before{
+    width: 100%;
+}
+.img {
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.slider .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    transition-delay: 0;
+    z-index: 1;
+    clip-path: circle(0px at center);
+}
+.slider input[type="radio"]:checked + .imgBx{
+    z-index: 10;
+    clip-path: circle(10000px at center);
+    transition-delay: 0.75s;
+}
+.slider .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .imgBx .quote1,.slider .imgBx .quote2, .slider .imgBx .quote3{
+    position: relative;
+    text-align: center;
+    max-width: 35em;
+}
+.slider .imgBx .quote1 p{
+    margin-top: 155%;
+    font-size: 135%;
+    line-height: 1 em;
+    color:#E0C8C8;
+}
+.slider .imgBx .quote2 p{
+    margin-top: 50%;
+    font-size: 200%;
+    font-weight: bold;
+    color:#FAE5D9;
+}
+.slider .imgBx .quote3 p{
+    margin-top: 155%;
+    font-size: 130%;
+    line-height: 1 em;
+    color: rgb(230, 205, 191);
+}
+.slider input[type="radio"]{
+   position: relative;
+   z-index: 1000;
+   margin: 0.5%;
+   margin-bottom: 2%;
+   outline: none;
+   cursor: pointer;
+}
+.footer{
+    background-color: #BA8484;
+    position: relative;
+    height: 20em;
+}
+.logo{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 55%;
+}
+.ig{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.yt{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.fb{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.google{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.contactText{
+    margin-top: 1%;
+    font-size: 250%;
+    color: #E9D3CE;
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+.emailContact{
+    position: absolute;
+    left: 52%;
+    top: 30%;
+}
+.emailContact img{
+    height: 2.3em;
+}
+.mtEmail{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.telpContact{
+    position: absolute;
+    left: 51.7%;
+    top: 49%;
+}
+.telpContact img{
+    height: 3.3em;
+}
+.mtTelp{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 52%;
+}
+.locationContact{
+    position: absolute;
+    left: 52.2%;
+    top: 70%; 
+}
+.locationContact img{
+    height: 3em;
+}
+.mtLocation{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 72%;
+}
+@media screen and (max-width: 800px){
+    header{
+        padding: 2% 10%;
+    }
+    .nav-items a{
+        font-size: 120%;
+        font-weight: 700;
+        margin-left: 1em;
+    }
+    .slider .imgBx{
+        width: 170%;
+        height: 100%;
+        padding: 10%;
+    }
+    .slider .imgBx .quote1,.slider .imgBx .quote2, .slider .imgBx .quote3{
+        max-width: 300%;
+    }
+    .slider .imgBx .quote1 p{
+        margin-top: 170%;
+        font-size: 185%;
+    }
+    .slider .imgBx .quote2 p{
+        margin-top: 90%;
+        font-size: 200%;
+    }
+    .slider .imgBx .quote3 p{
+        margin-top: 130%;
+        font-size: 170%;
+        line-height: 1 em;
+        color: rgb(230, 205, 191);
+    }
+    .slider input[type="radio"]{
+       margin: 1%;
+       margin-bottom: 7%;
+    }
+    .footer{
+        background-color: #BA8484;
+        position: relative;
+        height: 20em;
+        width: 85em;
+    }
+    .logo{
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 50%;
+    }
+    .contactText{
+        left: 55%;
+    }
+    .emailContact{
+        left: 50%;
+        top : 27%
+    }
+    .mtEmail{
+        font-size: 190%;
+        left: 55%;
+        top: 27%;
+    }
+    .telpContact{
+        left: 49.7%;
+        top : 45%;
+    }
+    .telpContact img{
+        height: 3.5em;
+    }
+    .mtTelp{
+        font-size: 190%;
+        left: 55%;
+        top: 48%;
+    }
+    .locationContact{
+        position: absolute;
+        left: 50%;
+        top: 50; 
+    }
+    .locationContact img{
+        height: 3.3em;
+    }
+    .mtLocation{
+        font-size: 190%;
+        left: 55%;
+        top: 72%;
+    }
+}

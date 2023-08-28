@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    transition: 1s ease;
+}
+.nav{
+    position: relative;
+}
+.nav-items a{
+    position: relative;
+    background-color: #AA7070;
+    color:#EDCDBB;
+    font-size: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 3.5em;
+    transition: 0.5s ease;
+    border: 0.5em solid #AA7070;
+    border-radius: 0.5em;
+}
+.nav-items a:before{
+    content: '';
+    position: absolute;
+    background:  #EDCDBB;
+    width: 0;
+    height: 0.1em;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.nav-items a:hover:before{
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9ADAD;
+}
+.subs-form{
+    width: 70%;
+    margin: auto;
+    border-radius: 2%;
+    background-color: none;
+    padding: 10%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.title{
+    margin-left: 45%;
+    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight: 900;
+}
+input[type=text], input[type=password], input[type=email], select{
+    width: 100%;
+    padding: 1.3% 7%;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1px solid #E3CECE;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #E3CECE;
+}
+.check{
+    display: inline-flex;
+    margin-left: 10px;
+}
+.check p{
+    margin-left: 15px;
+}
+.check input[type=checkbox]{
+    cursor: pointer;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: rgb(168, 112, 112);
+    color: black;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type=submit]:hover{
+    background-color: transparent;
+}
+.footer{
+    background-color: #BA8484;
+    position: relative;
+    height: 20em;
+}
+.logo{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 55%;
+}
+.ig{
+    margin-top: 1%;
+    margin-left: 5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.yt{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.fb{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.google{
+    margin-left: 0.5%;
+    height: 3.2em;
+    cursor: pointer;
+}
+.contactText{
+    margin-top: 1%;
+    font-size: 250%;
+    color: #E9D3CE;
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+.emailContact{
+    position: absolute;
+    left: 52%;
+    top: 30%;
+}
+.emailContact img{
+    height: 2.3em;
+}
+.mtEmail{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.telpContact{
+    position: absolute;
+    left: 51.7%;
+    top: 49%;
+}
+.telpContact img{
+    height: 3.3em;
+}
+.mtTelp{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 52%;
+}
+.locationContact{
+    position: absolute;
+    left: 52.2%;
+    top: 70%; 
+}
+.locationContact img{
+    height: 3em;
+}
+.mtLocation{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A241A;
+    position: absolute;
+    left: 55%;
+    top: 72%;
+}
+@media screen and (max-width: 800px){
+    header{
+        padding: 2% 10%;
+    }
+    .nav-items a{
+        font-size: 120%;
+        font-weight: 700;
+        margin-left: 1em;
+    }
+    .subs-form{
+        width: 120%;
+        margin-left: 30%;
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+    .title{
+        margin-left: 40%;
+        margin-bottom: 10%;
+        font-size: 250%;
+    }
+    input[type=text], input[type=password], input[type=email], select{
+        width: 100%;
+        padding: 2.5% 12%;
+        margin: 2% 0;
+    }
+    label{
+        font-size: 150%;
+    }
+    .check{
+        margin-left: 3%;
+    }
+    input[type=submit]{
+        padding: 3% 10%;
+        margin: 2% 0;
+        border: none;
+        border-radius: 1em;
+    }
+    .footer{
+        margin-top: 33%;
+        background-color: #BA8484;
+        position: relative;
+        height: 20em;
+        width: 85em;
+    }
+    .logo{
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 50%;
+    }
+    .contactText{
+        left: 55%;
+    }
+    .emailContact{
+        left: 50%;
+        top : 27%
+    }
+    .mtEmail{
+        font-size: 190%;
+        left: 55%;
+        top: 27%;
+    }
+    .telpContact{
+        left: 49.7%;
+        top : 45%;
+    }
+    .telpContact img{
+        height: 3.5em;
+    }
+    .mtTelp{
+        font-size: 190%;
+        left: 55%;
+        top: 48%;
+    }
+    .locationContact{
+        position: absolute;
+        left: 50%;
+        top: 50; 
+    }
+    .locationContact img{
+        height: 3.3em;
+    }
+    .mtLocation{
+        font-size: 190%;
+        left: 55%;
+        top: 72%;
+    }
+}
